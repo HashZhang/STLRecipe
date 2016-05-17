@@ -3,6 +3,9 @@
 #include <cmath>
 #include <stdio.h>
 using namespace std;
+
+int CalculatorNumber = 9;
+
 Calculator::Calculator()
 {
     Setparameter1(0.0);
