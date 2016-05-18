@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Calculator.h"
 #include <list>
+#include <Bclass.h>
 
 /*#define PASTE(n) "paste "#n
 
@@ -52,7 +53,7 @@ int main(){
         printf("%d",MAX);
     #endif // MAX*/
 
-    int count = 5;
+    /*int count = 5;
     int cur_num = 0;
     list<int> numlist;
     while(count){
@@ -66,6 +67,10 @@ int main(){
     {
         cout << *iter << "|";
     }
-    return 0;
+    return 0;*/
+    /*Bclass class1;
+    class1.count1++;
+    cout << class1.count1 << endl ;
+    cout << Bclass::count1;*/
 }
 /*#undef PASTE*/
