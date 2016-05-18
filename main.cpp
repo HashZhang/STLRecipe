@@ -1,6 +1,11 @@
 #include <iostream>
 #include "Calculator.h"
-#include "Calculator.h"
+#include <list>
+
+/*#define PASTE(n) "paste "#n
+
+#define MAX 1000*/
+
 using namespace std;
 
 /*void power3(double *p){
@@ -28,6 +33,39 @@ int main(){
     /*double a = 2.0;
     power3(&a);
     cout << a;*/
-    cout << CalculatorNumber;
+
+    /*cout << CalculatorNumber;
+    */
+    /*printf("%s",PASTE("asd"));*/
+
+    /*#if MAX>100
+        printf("%d",MAX);
+    #else
+        printf("not recognized!");
+    #endif // MAX
+
+    #ifdef MAX
+        printf("%d",MAX);
+    #endif // MAX
+
+    #ifndef MAX111
+        printf("%d",MAX);
+    #endif // MAX*/
+
+    int count = 5;
+    int cur_num = 0;
+    list<int> numlist;
+    while(count){
+        cin >> cur_num;
+        numlist.push_back(cur_num);
+        count --;
+    }
+    list<int> :: iterator iter;
+
+    for(iter = numlist.begin(); iter != numlist.end(); iter++ )
+    {
+        cout << *iter << "|";
+    }
     return 0;
 }
+/*#undef PASTE*/
