@@ -72,5 +72,25 @@ int main(){
     class1.count1++;
     cout << class1.count1 << endl ;
     cout << Bclass::count1;*/
+
+    /*Calculator *p(new Calculator());
+    p->Setparameter1(2.0);
+    p->Setparameter2(3.0);
+    cout << p->add();
+    delete p;*/
+
+    auto_ptr <Calculator> calAutoPtr(new Calculator());
+    Calculator *calculator1 = calAutoPtr.get();
+    calculator1->Setparameter1(2.0);
+    calculator1->Setparameter2(3.0);
+    cout << calculator1->add() << endl;
+
+    calculator1 = calAutoPtr.release();
+    delete calculator1;
+    cout << "release 之后，不再保存对应指针" << endl;
+
+    calAutoPtr.reset(new Calculator());
+    calAutoPtr.reset(new Calculator());
+    cout << "reset 之后，对应指针被干掉" << endl;
 }
 /*#undef PASTE*/
