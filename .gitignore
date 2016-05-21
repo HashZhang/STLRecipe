@@ -1,5 +1,7 @@
-*.[o]
-obj
-bin
-*.cbp
-*.depend
+Debug/
+*.sln
+*.suo
+*.opensdf
+*.vcxproj
+*.filters
+*.sdf
